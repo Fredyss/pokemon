@@ -1,43 +1,32 @@
-main {
-    margin: 3em;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    height: 100vh;
-    grid-gap: 4em;
-  }
-  
+$fontColor: rgb(49, 49, 49);
+
 
 article {
+    padding: 1em;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-self: center;
     align-items: center;
-    border-radius: 10px;
-    height: 100%;
-    background-color: black;
+    background-color: rgb(216, 216, 216);
     cursor: pointer;
 }
 
-article.show {
-    background-color:  rgba(0, 0, 0, 0.1);
+article:hover{
+    background-color: rgb(173, 173, 173);
 }
 
-
-article img{
-    z-index: -100;
+.pokemon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 30px solid black;
 }
 
 p {
-    color: black;
+    color: $fontColor;
     font-size: 20px;
     text-transform: capitalize;
     font-weight: 500;
 }
-
-
-
-
-
-
-
-
